@@ -30,7 +30,7 @@ def dotm_search(text, directory):
 
 if __name__ == '__main__':
     if len(sys.argv) > 2:
-        dotm_search(sys.argv[1], sys.argv[2])
+        dotm_search(sys.argv[1], sys.argv[sys.argv.index("--dir") + 1])
     elif len(sys.argv) > 1:
         dotm_search(sys.argv[1], os.getcwd())
     else: 
